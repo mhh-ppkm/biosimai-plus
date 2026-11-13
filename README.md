@@ -14,7 +14,7 @@ Aplikasi web (PWA) satu halaman dalam format yang sama dengan PhysicsSimAI+ dan 
 ## Muat naik ke GitHub Pages
 
 1. Cipta repositori baharu bernama `biosimai-plus` di akaun `mhh-ppkm`.
-2. Muat naik **semua** fail dalam folder ini (termasuk folder `icons/`, `sw.js`, `manifest.webmanifest`, `.nojekyll`) ke cabang `main`.
+2. Muat naik **semua** fail dalam folder ini (semua fail berada di aras utama: `index.html`, `manifest.webmanifest`, `sw.js`, ikon `icon-*.png`, `maskable-512.png`, `favicon-32.png`, `.nojekyll`) ke cabang `main`.
 3. Settings → Pages → Source: *Deploy from a branch* → `main` / `(root)` → Save.
 4. Selepas 1–2 minit laman tersedia di `https://mhh-ppkm.github.io/biosimai-plus/`.
 
@@ -28,3 +28,10 @@ Jika nama repositori berbeza, tukar pemalar `PWA_URL` dalam `index.html`.
 Buka aplikasi sekali semasa ada internet. Service worker menyimpan semua fail; selepas itu semua ciri berfungsi tanpa internet. Hanya pautan PDF percubaan 2025 memerlukan internet.
 
 Semua soalan ialah soalan asal gaya SPM, bukan soalan bocor atau ramalan.
+
+## Jika ikon tidak muncul (huruf "G" kelabu)
+
+Android menyimpan ikon lama. Selepas memuat naik versi baharu:
+1. Tekan lama ikon BioSimAI+ → *Uninstall / Nyahpasang* (atau *Remove*).
+2. Buka Chrome → ⋮ → Settings → Site settings → All sites → `mhh-ppkm.github.io` → *Clear & reset*.
+3. Buka semula pautan dalam **Chrome**, tunggu 10 saat, kemudian tekan **Pasang aplikasi**.
