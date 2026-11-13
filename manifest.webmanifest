@@ -1,0 +1,19 @@
+{
+  "name": "BioSimAI+ Pecutan SPM 2026 · Biologi 4551",
+  "short_name": "BioSimAI+",
+  "description": "Pecutan Terakhir SPM 2026 Biologi 4551: Kertas 1 & 2, simulator biologi, 28 aplikasi industri, nota infografik. Ir. Ts. Dr. Muhammad Hafiz HASSAN, USM.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#EEF1F6",
+  "theme_color": "#2E1A63",
+  "lang": "ms",
+  "categories": ["education"],
+  "icons": [
+    {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}
