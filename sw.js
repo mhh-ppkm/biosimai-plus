@@ -1,5 +1,5 @@
 /* BioSimAI+ service worker: full offline after the first visit (real photos cached once viewed) */
-const CACHE='biosimai-plus-20261114-1359',PHOTOS='biosimai-photos-v1';
+const CACHE='biosimai-plus-20261119-1243',PHOTOS='biosimai-photos-v1';
 const CORE=['./','./index.html','./manifest.webmanifest','./icon-192.png','./icon-512.png','./maskable-512.png'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE.map(u=>new Request(u,{cache:'reload'})))).then(()=>self.skipWaiting()));});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==CACHE&&k!==PHOTOS).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));});
